@@ -7,7 +7,10 @@ export default () => {
   const [form] = Form.useForm()
 
   const onClick = () => {
-    form.setFieldsValue({phone: '13816081426'})
+    console.log('clicked')
+    setTimeout(() =>{
+      form.setFieldsValue({phone: '13816081426'})
+    }, 0)
   }
 
   const onSubmit = () => {
