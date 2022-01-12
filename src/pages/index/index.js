@@ -6,12 +6,12 @@ import styles from './index.css';
 export default () => {
   const [form] = Form.useForm()
 
-  const onClick = () => {
-    console.log('clicked')
-    setTimeout(() =>{
-      form.setFieldsValue({phone: '13816081426'})
-    }, 0)
-  }
+  // const onClick = () => {
+  //   console.log('clicked')
+  //   setTimeout(() =>{
+  //     form.setFieldsValue({phone: '13816081426'})
+  //   }, 0)
+  // }
 
   const onSubmit = () => {
     form.validateFields().then(values => {
@@ -21,7 +21,8 @@ export default () => {
 
   return (
     <Form form={form} cell>
-      <FormItem
+      <FormItem label={'当前体温'} name={'temperature'} rules={[{ required: true, type: 'number' }]} />
+      {/* <FormItem
         label={'手机号'}
         name={'phone'}
         rules={[{required: true}]}
@@ -35,7 +36,7 @@ export default () => {
             </Space>
           )}
         </TransferChange>
-      </FormItem>
+      </FormItem> */}
       <Button type='primary' onTap={onSubmit}>提交</Button>
     </Form>
   );

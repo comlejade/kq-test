@@ -1087,10 +1087,10 @@
   resolved "https://registry.nlark.com/@gcanvas/core/download/@gcanvas/core-1.0.0.tgz#3ef43a084d8a309b90a2eebca553ecb82a0cf77e"
   integrity sha1-PvQ6CE2KMJuQou68pVPsuCoM934=
 
-"@kqinfo/ui@^1.8.80":
-  version "1.8.80"
-  resolved "https://registry.npmmirror.com/@kqinfo/ui/download/@kqinfo/ui-1.8.80.tgz#2deea732ae1ad714dd2d945dd6b94f45f35b2610"
-  integrity sha512-zZvClXoUJ8yZOZNnJryrWZcnfY7mb7wY0US0XuchzcXc7O3YYKy2wBgQF6xioLWnylOQ2Nxfu9g7DF9Dg3IT0g==
+"@kqinfo/ui@^1.8.83":
+  version "1.8.83"
+  resolved "https://registry.npmmirror.com/@kqinfo/ui/download/@kqinfo/ui-1.8.83.tgz#6c69405f42ea979b3178708f95ce43d6466f7554"
+  integrity sha512-9IdApEp1C9u+G+HqxLEEjEvysArR5unZSwtBZl62BtoOlX9H3NCQ5GxmCgAZmKeovxZ6OkHUkF4TfYmudYnTKA==
   dependencies:
     "@antv/f2" "^3.8.10-beta.1"
     "@flyskywhy/react-native-gcanvas" "^2.3.7"
@@ -1140,6 +1140,7 @@
     react-native-web "^0.17.5"
     react-photo-view "^0.5.2"
     react-sortablejs "^6.0.0"
+    safe-area-insets "^1.4.1"
     sentry-miniapp "^0.11.1"
     smoothscroll-polyfill "^0.4.4"
     sortablejs "^1.14.0"
@@ -3700,9 +3701,9 @@ dom-serializer@^1.0.1:
     entities "^2.0.0"
 
 dom7@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.npmmirror.com/dom7/download/dom7-4.0.2.tgz#b3595f34c9658d72e88bb6fa6a6e7b430d4bd5fd"
-  integrity sha512-Ji4t3Y/vNQg6Q9bR+Syx6Td8qiq8116LE9h4OzbPuxdxK7DyyX7i8EXkYgBX6+EiX6+oYXDTH5BSN29G/n4jug==
+  version "4.0.4"
+  resolved "https://registry.npmmirror.com/dom7/download/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
+  integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
   dependencies:
     ssr-window "^4.0.0"
 
@@ -6593,9 +6594,9 @@ pinkie@^2.0.0:
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
 pinyin-pro@^3.3.1:
-  version "3.7.0"
-  resolved "https://registry.npmmirror.com/pinyin-pro/download/pinyin-pro-3.7.0.tgz#2f93a220a190e94278755d7c5f02af5ba2756df4"
-  integrity sha512-/ByjM2eMMmI7HDfqtR5mBPz7o7w0oizHkExkGMISBJYI4wgbqPupyJD3U0zCRJoMIAjHB3UUoTHsMAmAxBdkJQ==
+  version "3.7.1"
+  resolved "https://registry.npmmirror.com/pinyin-pro/download/pinyin-pro-3.7.1.tgz#bd9e5e15bb90646301ae70de8b1dfa35e675e8b4"
+  integrity sha512-CltpMsTnTp1H5F6QoO/vyCKNaC10iJP6YyGWK6ph9OMoV+N9fEA71rk4gnXNtioSVf58Pwight+eNlRAoOCsIQ==
 
 pirates@^4.0.0:
   version "4.0.4"
@@ -7178,7 +7179,14 @@ qs@6.9.6:
   resolved "https://registry.npmmirror.com/qs/download/qs-6.9.6.tgz#26ed3c8243a431b2924aca84cc90471f35d5a0ee"
   integrity sha512-TIRk4aqYLNoJUbd+g2lEdz5kLWIuTMRagAXxl78Q0RiVjAOugHmeKNGdd3cwo/ktpf9aL9epCfFqWDEKysUlLQ==
 
-qs@^6.10.1, qs@^6.9.3, qs@^6.9.4:
+qs@^6.10.1:
+  version "6.10.3"
+  resolved "https://registry.npmmirror.com/qs/download/qs-6.10.3.tgz#d6cde1b2ffca87b5aa57889816c5f81535e22e8e"
+  integrity sha512-wr7M2E0OFRfIfJZjKGieI8lBKb7fRCH4Fv5KNPEs7gJ8jadvotdsS08PzOKR7opXhZ/Xkjtt3WF9g38drmyRqQ==
+  dependencies:
+    side-channel "^1.0.4"
+
+qs@^6.9.3, qs@^6.9.4:
   version "6.10.2"
   resolved "https://registry.npmmirror.com/qs/download/qs-6.10.2.tgz#c1431bea37fc5b24c5bdbafa20f16bdf2a4b9ffe"
   integrity sha512-mSIdjzqznWgfd4pMii7sHtaYF8rx8861hBO80SraY5GT0XQibWZWJSid0avzHGkDIZLImux2S5mXO0Hfct2QCw==
@@ -7951,6 +7959,11 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   integrity sha1-6Eg5bwV9Ij8kOGkkYY4laUFh7Ec=
   dependencies:
     aproba "^1.1.1"
+
+safe-area-insets@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.nlark.com/safe-area-insets/download/safe-area-insets-1.4.1.tgz#89309e01a516dcd7d2fe012a9c4115182957bd8b"
+  integrity sha1-iTCeAaUW3NfS/gEqnEEVGClXvYs=
 
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
